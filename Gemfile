@@ -7,6 +7,10 @@ gem "rails", "~> 7.0.7", ">= 7.0.7.2"
 gem "sqlite3", "~> 1.4"
 gem "puma", "~> 5.0"
 gem "graphql"
+gem "graphiql-rails"
+gem 'sass-rails'
+gem 'uglifier'
+gem 'coffee-rails'
 
 # Build JSON APIs with ease [https://github.com/rails/jbuilder]
 # gem "jbuilder"
