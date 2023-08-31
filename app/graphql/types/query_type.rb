@@ -4,11 +4,11 @@ module Types
     include GraphQL::Types::Relay::HasNodeField
     include GraphQL::Types::Relay::HasNodesField
 
-    field :post, PostType, 'Find a post by ID' do
+    field :post, Types::PostType, 'Find a post by ID' do
       argument :id, ID
     end
 
-    field :post_by_name, [PostType], 'Find a post by name' do
+    field :post_by_name, [Types::PostType], 'Find a post by name' do
       argument :title, String
     end
 

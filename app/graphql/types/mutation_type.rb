@@ -6,5 +6,14 @@ module Types
     def test_field
       "Hello World"
     end
+
+    field :new_post, String, 'Create new Post' do
+      argument :title, String
+    end
+
+    def new_post(title: )
+      Post.create(title:)
+      "New Post Created"
+    end
   end
 end
